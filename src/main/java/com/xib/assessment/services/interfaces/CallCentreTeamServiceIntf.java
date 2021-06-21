@@ -1,8 +1,8 @@
 package com.xib.assessment.services.interfaces;
 
 import com.xib.assessment.models.CallCentreTeamDTO;
-import com.xib.assessment.entity.Agent;
-import com.xib.assessment.entity.Team;
+import com.xib.assessment.domain.*;
+import com.xib.assessment.domain.Team;
 import com.xib.assessment.errors.AppError;
 
 import javax.validation.constraints.NotNull;

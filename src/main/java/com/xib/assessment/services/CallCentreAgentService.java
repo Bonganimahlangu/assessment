@@ -1,12 +1,12 @@
 package com.xib.assessment.services;
 
 
-import com.xib.assessment.assembler.AppAssembler;
+import com.xib.assessment.mappings.AppAssembler;
 import com.xib.assessment.models.CallCentreAgentDTO;
-import com.xib.assessment.entity.Agent;
+import com.xib.assessment.domain.Agent;
 import com.xib.assessment.errors.AppError;
-import com.xib.assessment.repository.AgentRepository;
-import com.xib.assessment.repository.ManagerRepository;
+import com.xib.assessment.dao.AgentRepository;
+import com.xib.assessment.dao.ManagerRepository;
 import com.xib.assessment.services.interfaces.CallCentreAgentServiceIntf;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

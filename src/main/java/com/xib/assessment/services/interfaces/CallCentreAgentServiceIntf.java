@@ -1,7 +1,7 @@
 package com.xib.assessment.services.interfaces;
 
 import com.xib.assessment.models.CallCentreAgentDTO;
-import com.xib.assessment.entity.Agent;
+import com.xib.assessment.domain.Agent;
 import com.xib.assessment.errors.AppError;
 
 import java.util.List;

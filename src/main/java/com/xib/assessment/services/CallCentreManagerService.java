@@ -3,11 +3,11 @@ package com.xib.assessment.services;
 
 import com.xib.assessment.models.CallCentreManagerDTO;
 import com.xib.assessment.errors.AppError;
-import com.xib.assessment.assembler.AppAssembler;
-import com.xib.assessment.entity.Manager;
-import com.xib.assessment.entity.Team;
-import com.xib.assessment.repository.ManagerRepository;
-import com.xib.assessment.repository.TeamRepository;
+import com.xib.assessment.mappings.AppAssembler;
+import com.xib.assessment.domain.Manager;
+import com.xib.assessment.domain.Team;
+import com.xib.assessment.dao.ManagerRepository;
+import com.xib.assessment.dao.TeamRepository;
 import com.xib.assessment.services.interfaces.CallCentreManagerServiceIntf;
 import org.springframework.stereotype.Service;
 

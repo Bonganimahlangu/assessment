@@ -1,11 +1,11 @@
 package com.xib.assessment.sterotypes;
 
-import com.xib.assessment.entity.Agent;
-import com.xib.assessment.entity.Manager;
-import com.xib.assessment.entity.Team;
-import com.xib.assessment.repository.AgentRepository;
-import com.xib.assessment.repository.ManagerRepository;
-import com.xib.assessment.repository.TeamRepository;
+import com.xib.assessment.domain.Agent;
+import com.xib.assessment.domain.Manager;
+import com.xib.assessment.domain.Team;
+import com.xib.assessment.dao.AgentRepository;
+import com.xib.assessment.dao.ManagerRepository;
+import com.xib.assessment.dao.TeamRepository;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;

@@ -3,12 +3,10 @@ package com.xib.assessment.services;
 
 import com.xib.assessment.models.CallCentreTeamDTO;
 import com.xib.assessment.errors.AppError;
-import com.xib.assessment.assembler.AppAssembler;
-import com.xib.assessment.entity.Agent;
-import com.xib.assessment.entity.Manager;
-import com.xib.assessment.entity.Team;
-import com.xib.assessment.repository.AgentRepository;
-import com.xib.assessment.repository.TeamRepository;
+import com.xib.assessment.mappings.AppAssembler;
+import com.xib.assessment.domain.*;
+import com.xib.assessment.dao.AgentRepository;
+import com.xib.assessment.dao.TeamRepository;
 import com.xib.assessment.services.interfaces.CallCentreTeamServiceIntf;
 import org.springframework.stereotype.Service;
 
@@ -26,8 +24,6 @@ public class CallCentreTeamService implements CallCentreTeamServiceIntf {
         this.agentRepository = agentRepository;
         this.teamRepository = teamRepository;
     }
-
-
 
     @Override
     public List<Team> findAllTeams() throws AppError {
