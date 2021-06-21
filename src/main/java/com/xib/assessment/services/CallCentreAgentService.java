@@ -27,25 +27,6 @@ public class CallCentreAgentService implements CallCentreAgentServiceIntf {
         this.managerRepository = managerRepository;
     }
 
-
-
-    @Override
-    public List<Agent> findAllCallCentreAgentsWithPaging(Integer pageNo, Integer pageSize) throws AppError {
-
-        Pageable paging = PageRequest.of(pageNo, pageSize, Sort.by("id"));
-        Page<Agent> agentsPaged = agentRepository.findAll(paging);
-
-        List<Agent> agents;
-
-        if (agentsPaged.isEmpty()) {
-            throw new AppError("No CallCentreAgents found!");
-        } else {
-            agents = agentsPaged.getContent();
-        }
-
-        return agents;
-    }
-
     @Override
     public List<Agent> findAllCallCentreAgents() throws AppError {
 

@@ -8,15 +8,6 @@ import java.util.List;
 
 public interface CallCentreAgentServiceIntf {
 
-    /**
-     * Finds All CallCentreAgents on the database
-     * Applies pagination
-     * @return a list of CallCentreAgents
-     * @throws AppError if no CallCentreAgents found.
-     * @param pageNo : specifies the page number
-     * @param pageSize : specifies the number of items(size) on the page
-     */
-    List<Agent> findAllCallCentreAgentsWithPaging(Integer pageNo, Integer pageSize) throws AppError;
 
     /**
      * Finds All CallCentreAgents on the database
